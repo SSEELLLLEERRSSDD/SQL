@@ -15,7 +15,7 @@ BEGIN
 
     -- "Хорошие" данные шалом шабат
     INSERT INTO target_table
-     SELECT *
+    SELECT *
     FROM raw_table
     WHERE "Report_date" BETWEEN start_date AND end_date
     AND "Report_date" BETWEEN '2023-01-01' AND '2023-12-31';
