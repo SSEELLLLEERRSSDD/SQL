@@ -1,5 +1,5 @@
 CREATE TABLE IF NOT EXISTS clean_table AS 
-SELECT * FROM raw_table WITH NO DATA;
+SELECT * FROM target_table WITH NO DATA;
 
 CREATE OR REPLACE FUNCTION transform_data(start_date DATE, end_date DATE)
 RETURNS VOID AS $$
